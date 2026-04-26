@@ -11,7 +11,6 @@ public class CovidConfig
 
     public CovidConfig()
     {
-        Load();
     }
 
     public void Load()

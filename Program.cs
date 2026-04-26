@@ -1,4 +1,5 @@
 ﻿CovidConfig config = new CovidConfig();
+config.Load();
 
 config.UbahSatuan();
 
@@ -15,4 +16,3 @@ bool suhuValid = config.satuan_suhu.ToLower() == "celcius"
 bool hariValid = hariDeman < config.batas_hari_deman;
 
 Console.WriteLine(suhuValid && hariValid ? config.pesan_diterima : config.pesan_ditolak);
-    
